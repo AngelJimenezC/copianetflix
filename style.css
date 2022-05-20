@@ -1,0 +1,132 @@
+
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    /*background: var(--fondo);*/
+    background-color: #141414 !important;
+
+}
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    color: #d40d17;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav a{
+    color: rgb(170, 168, 168);
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover{
+    color: #ffffff;
+}
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),  url(baners/batman.jpg);
+    background-position: center center;
+    background-size: cover;
+   margin-bottom: 3.12em;
+   display: flex;
+   text-align: justify;
+   
+   align-items: end;
+}
+
+.pelicula-principal .container{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.pelicula-principal .titulo{
+font-weight: 600;
+font-size: 3.05em;
+margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 75%;
+    margin-bottom: 1.25em;
+}
+.pelicula-principal .boton{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+
+}
+.pelicula-principal .boton:hover{
+    background: #fff;
+    color: black;
+}
+.pelicula-principal .boton i{
+    margin-right: 1.25em;
+}
+.peliculas-recomendadas{
+    color: #ffffff;
+    margin: 10px;
+}
+
+.peliculas-varias{
+
+    padding: 30px 0;
+    margin: 30px 30px;
+    border: 20px;
+   
+}
+
+.peliculas-varias-img{
+    margin: 5px;
+}
+.lo-mas-visto{
+    color: #ffffff;
+    margin: 10px;
+}
+
+
+@media screen and (max-width:768px){
+    header .logo{
+        margin-bottom: 10px;
+
+    }
+     header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pelicula-principal{
+        font-size: 14px;
+    }
+    .pelicula-principal .descripcion{
+        max-width: 100%;
+    }
+}
